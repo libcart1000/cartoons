@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The video autoplay attribute</h1>
+ 
+
+
+<video controls src="movie.mp4" id="video" autoplay></video>
+<script>
+    var videos = [
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/how-to-pick-a-fight-with-your-wife-without-really-trying.mp4',
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+    'https://ww.b98.tv/the-flintstones/kleptomaniac-pebbles.mp4', 
+
+    ];
+    var currentIndex = -1;
+    var video = document.getElementById('video');
+    video.onended = function(){
+        currentIndex++;
+        if(currentIndex < videos.length){
+            video.src = videos[currentIndex];
+        }
+    }
+    video.volume = 0.2;
+</script>
+
+</body>
+</html>
